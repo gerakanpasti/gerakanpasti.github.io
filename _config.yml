@@ -8,6 +8,17 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-paginate
+  - jemoji
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -16,19 +27,10 @@
 title: Gerakan Pasti
 email: siska.restu.iskandar@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Gerakan Perempuan Sadar Teknologi
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://gerakanpasti.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: HaloSiska
 github_username:  gerakanpasti
-
-# Build settings
-markdown: kramdown
-theme: jekyll-theme-cayman
-gems:
-  - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+paginate: 5 # The number of post contents in a single page
+paginate_path: "page_:num"
